@@ -31,4 +31,17 @@ object Chapter03 {
   def exercise04(array: Array[Int]): Array[Int] = {
     array.filter(_ > 0) ++ array.filter(_ <= 0)
   }
+  
+    def exercise05(array: Array[Double]): Double = array.sum / array.length
+  
+  def exercise06(array: Array[Int]): Array[Int] = array.sorted.reverse
+  
+  def exercise07[A](array: Array[A]): Array[A] = array.distinct
+  
+  def exercise08(arrayBuffer: ArrayBuffer[Int]): Unit = {
+    val indexes = for (i <- arrayBuffer.indices if arrayBuffer(i) < 0) yield i
+    for (j <- indexes.drop(1).reverse) {
+      arrayBuffer.remove(j)
+    }
+  }
 }

@@ -44,4 +44,15 @@ object Chapter03 {
       arrayBuffer.remove(j)
     }
   }
+  
+  def exercise09: Array[String] =
+  java.util.TimeZone.getAvailableIDs.collect {
+    case timeZone if timeZone.startsWith("America/") => timeZone.drop(8)
+  }
+
+def exercise10 = {
+  import java.awt.datatransfer._
+  val flavors: SystemFlavorMap = SystemFlavorMap.getDefaultFlavorMap.asInstanceOf[SystemFlavorMap]
+  flavors.getNativesForFlavor(DataFlavor.imageFlavor).toArray.toBuffer
+}
 }

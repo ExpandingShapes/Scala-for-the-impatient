@@ -1,3 +1,5 @@
+import scala.collection.mutable.ArrayBuffer
+
 object Chapter03 {
   val isEven: Int => Boolean = _ % 2 == 0
 

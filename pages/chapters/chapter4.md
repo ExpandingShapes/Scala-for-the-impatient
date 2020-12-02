@@ -15,6 +15,21 @@ while (in.hasNext()) process in.next()
 ```
 _Or look at Chapter 9 for a Scalaesque way.
 At the end, print out all words and their counts._
+```scala
+val words = scala.collection.mutable.Map[String, Int]()
+val in = new Scanner(new File(fileName))
+
+while (in.hasNext()) {
+  val nextWord = in.next()
+  words.get(nextWord) match {
+    case Some(count) => words(nextWord) += 1
+    case None => words += (nextWord -> 1)
+  }
+}
+
+in.close()
+words
+```
 
 _3. Repeat the preceding exercise with an immutable map._
 
@@ -22,7 +37,7 @@ _4. Repeat the preceding exercise with a sorted map, so that the words are print
 
 _5. Repeat the preceding exercise with a java.util.TreeMap that you adapt to the Scala API._
 
-_6. Define a linked hash map that maps '"Monday"' to 'java.util.Calendar.MONDAY', and similarly for the other
+_6. Define a linked hash map that maps `"Monday"` to `java.util.Calendar.MONDAY`, and similarly for the other
 weekdays. Demonstrate that the elements are visited in insertion order._
 
 _7. Print a table of all Java properties, like this:_
@@ -36,10 +51,12 @@ path.separator           | :
 java.vm.name             | Java HotSpot(TM) Server VM
 ```
 You need to find the length of the longest key before you can print the table._
-_8. Write a function 'minmax(values: Array[Int])' that returns a pair containing the smallest and largest
+
+_8. Write a function `minmax(values: Array[Int])` that returns a pair containing the smallest and largest
 values in the array._
 
-_9. Write a function 'lteqgt(values: Array[Int], v: Int)' that returns a triple containing the counts of
+_9. Write a function `lteqgt(values: Array[Int], v: Int)` that returns a triple containing the counts of
 values less than v, equal to v, and greater than v._
-_10. What happens when you zip together two strings, such as '"Hello".zip("World")'? Come up with a
+
+_10. What happens when you zip together two strings, such as `"Hello".zip("World")`? Come up with a
 plausible use case._

@@ -1,4 +1,4 @@
-#[Chapter 1. The Basics](/pages/chapters/chapter1.md)
+[#Chapter 1. The Basics](/pages/chapters/chapter1.md)
 
 
 

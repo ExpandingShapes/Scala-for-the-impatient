@@ -4,7 +4,8 @@ _1. Set up a map of prices for a number of gizmos that you covet. Then produce a
 the same keys and the prices at a 10 percent discount._
 ```scala
 val gizmos = Map("Smart Watches" -> 1200, "Shower Speaker" -> 650, "Portable Projector" -> 460)
-for((gizmo, price) <- gizmos) yield (gizmo -> price * 0.9)```
+for((gizmo, price) <- gizmos) yield (gizmo -> price * 0.9)
+```
 
 _2. Write a program that reads words from a file. Use a mutable map to count how often each word
 appears. To read the words, simply use a `java.util.Scanner`:

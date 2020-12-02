@@ -1,3 +1,7 @@
+#[Chapter 1. The Basics](/pages/chapters/chapter1.md)
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/ExpandingShapes/Scala-for-the-impatient/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.

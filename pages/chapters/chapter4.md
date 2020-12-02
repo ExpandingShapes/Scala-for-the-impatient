@@ -1,4 +1,4 @@
-#Chapter 4. Maps and Tuples
+# Chapter 4. Maps and Tuples
 
 _1. Set up a map of prices for a number of gizmos that you covet. Then produce a second map with the same keys and the prices at a 10 percent discount._
 ```scala

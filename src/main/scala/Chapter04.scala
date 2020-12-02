@@ -1,8 +1,8 @@
-import java.util.Scanner
+import java.util.{Properties, Scanner}
 import java.io.File
 import java.util
-
 import scala.collection.mutable
+import scala.jdk.CollectionConverters._
 
 object Chapter04 {
   def exercise01: Map[String, Double] = {
@@ -85,4 +85,26 @@ object Chapter04 {
     "Saturday" -> java.util.Calendar.SATURDAY,
     "Sunday" -> java.util.Calendar.SUNDAY,
   )
+
+  def exercise07(): Unit = {
+    val KEY_VALUE_SEPARATOR = "    "
+    val properties = java.lang.System.getProperties.asScala
+    val maxKeyLength = properties.keys.maxBy(_.length).length
+    properties.keys.foreach { key =>
+      println(s"$key${" " * (maxKeyLength - key.length)}$KEY_VALUE_SEPARATOR| ${properties(key)}")
+    }
+  }
+
+  def exercise08(values: Array[Int]): (Int, Int) = (values.min, values.max)
+
+  def exercise09(values: Array[Int], v: Int): (Int, Int, Int) = (
+    values.count(_ < v),
+    values.count(_ == v),
+    values.count(_ > v)
+  )
+
+  // What happens when you zip together two strings, such as "Hello".zip("World")? Come up with a plausible use case.
+  // You get a sequence of tuples consisting of str1(0) -> str2(0), str1(1) -> str2(1), etc.
+  // With .fold(), it is possible to check two strings for equality
+  def exercise10: Seq[(Char, Char)] = "Hello".zip("World")
 }

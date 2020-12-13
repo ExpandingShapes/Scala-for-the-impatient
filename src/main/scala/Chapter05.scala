@@ -1,6 +1,7 @@
 import scala.beans.BeanProperty
 
-object Chapter03 {
+//Classes
+object Chapter05 {
   //1
   class Counter {
     private var value: Int = 0

@@ -45,4 +45,59 @@ object Chapter05 {
   val firstName = name.split(" ").headOption.getOrElse("")
   val lastName = name.split(" ").lastOption.getOrElse("")
   }
+  
+  //8
+  class Car(val manufacturer: String, val modelName: String, modelYear: Int = -1, var licensePlate: String = "") {
+  
+    def this(manufacturer: String, modelName: String, modelYear: Int) = {
+      this(manufacturer, modelName, modelYear, "")
+    }
+  
+    def this(manufacturer: String, modelName: String, licensePlate: String) = {
+      this(manufacturer, modelName, -1, licensePlate)
+    }
+  
+    def this(manufacturer: String, modelName: String) = {
+      this(manufacturer, modelName, -1, "")
+    }
+  }
+  
+  //9
+  def exercise09 =
+  """    public class Car {
+        private final String manufacturer;
+        public String getManufacturer() { return manufacturer; }
+        
+        private final String modelName;
+        public String getModelName() { return modelName; }
+        
+        private final int modelYear;
+        public int getModelYear() { return modelYear; }
+        
+        private String licensePlate;
+        public String getLicensePlate() { return licensePlate; }
+        public void setLicensePlate(String licensePlate) { this.licensePlate = licensePlate; }
+        
+        Car(String manufacturer, String modelName, int modelYear, String licensePlate) {
+            this.manufacturer = manufacturer;
+            this.modelName = modelName;
+            this.modelYear = modelYear;
+            this.licensePlate = licensePlate;
+        }
+        
+        Car(String manufacturer, String modelName, int modelYear) {
+            this(manufacturer, modelName, modelYear, "");
+        }
+        
+        Car(String manufacturer, String modelName, String licensePlate) {
+            this(manufacturer, modelName, -1, licensePlate);
+        }
+        
+        Car(String manufacturer, String modelName ) {
+            this(manufacturer, modelName, -1, "");
+        }
+    }"""
+
+  //10
+class Employee(val name: String = "John Q. Public", var salary: Double = 0.0)
 }

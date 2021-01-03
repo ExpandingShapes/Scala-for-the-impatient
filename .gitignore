@@ -85,3 +85,6 @@ out/
 ### Scala ###
 *.class
 *.log
+.idea
+project
+target

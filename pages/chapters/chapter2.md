@@ -68,14 +68,14 @@ def product(s: String): Long = {
 ```  
 
 _10. Write a function that computes xn, where n is an integer. Use the following recursive definition:_  
-• xn = y2 if n is even and positive, where y = xn / 2.
-• xn = x·xn – 1 if n is odd and positive.
-• x0 = 1.
-• xn = 1 / x–n if n is negative.
+• xn = y2 if n is even and positive, where y = xn / 2.  
+• xn = x·xn – 1 if n is odd and positive.  
+• x0 = 1.  
+• xn = 1 / x–n if n is negative.  
 _Don’t use a return statement._  
 ```scala
 def exercise10(x: Int, n: Int): Double = n match {
-    case n if isEven(n) && n > 0 =>
+    case n if isEven(n) && n > 0  =>
       exercise10(x, n / 2) * exercise10(x, n / 2)
     case n if !isEven(n) && n > 0 => x * exercise10(x, n - 1)
     case 0                        => 1

@@ -1,4 +1,4 @@
-[#Chapter 1. The Basics](/pages/chapters/chapter1.md)  
+#[Chapter 1. The Basics](/pages/chapters/chapter1.md)  
 
 [#Chapter 2. Control Structures and Functions](/pages/chapters/chapter2.md)  
 

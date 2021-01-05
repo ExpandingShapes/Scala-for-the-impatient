@@ -65,4 +65,4 @@ The differences between them and `substring` are:**
 - `substring` is less readable.  
 - `substring` doesn't allow one to treat a `String` as a sequential collection of chars.  
 
-### [To the main page](/)  
+### [To the main page](/Scala-for-the-impatient)

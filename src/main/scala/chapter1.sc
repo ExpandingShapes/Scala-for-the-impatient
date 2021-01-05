@@ -31,7 +31,7 @@ pow(sqrt(3), 2) - 3
 //5. What does 10 max 2 mean? In which class is the max method defined?
 //A: Called on a number of Int/Short/Byte/etc and given the parameter that of the same type,
 //the number gets implicitly converted to RichInt/RichShort/RichByte/etc, and max returns
-//the number > that or that otherwise
+//the number if it is greater than the parameter or is equal to the parameter or the parameter otherwise.
 
 //6. Using BigInt, compute 2 ^ 1024
 BigInt(2).pow(1024)
@@ -46,15 +46,14 @@ BigInt(2).pow(1024)
 BigInt.probablePrime(100, Random).toString(36)
 
 //9. How do you get the first character of a string in Scala? The last character?
-//A: head/headOption and last methods
+//A: By calling `head`/`headOption` and `last`/`takeRight(1)` methods.
 
 //10. What do the take, drop, takeRight, and dropRight string functions do?
 //What advantage or disadvantage do they have over using substring?
-//A: drop/dropRight return the string without its n first/last chars
-//take/takeRight return the string's n first/last chars
-//0 - these StringOps operations use slice method which delegates to String.substring
-//1 - substring can throw IndexOutOfBoundsException
-//2 - substring is less readable
-//3 - substring doesn't allow one to treat a String as a sequential collection of chars
-
-//ScalaParser(new Repl)
+//A: drop/dropRight return the string without its n first/last chars,
+//take/takeRight return the string's n first/last chars.
+//The differences between them and substring are:
+//- these StringOps operations use slice method which delegates to String.substring.
+//- substring can throw IndexOutOfBoundsException.
+//- substring is less readable.
+//- substring doesn't allow one to treat a String as a sequential collection of chars.

@@ -1,4 +1,4 @@
-### [To the main page](/index.md)
+### [To the main page](/index.md)  
 
 # Chapter 1. The Basics  
 
@@ -63,4 +63,6 @@ The differences between them and `substring` are:**
 - these `StringOps` operations use slice method which delegates to `String.substring`.  
 - `substring` can throw `IndexOutOfBoundsException`.  
 - `substring` is less readable.  
-- `substring` doesn't allow one to treat a `String` as a sequential collection of chars.
+- `substring` doesn't allow one to treat a `String` as a sequential collection of chars.  
+
+### [To the main page](/index.md)  

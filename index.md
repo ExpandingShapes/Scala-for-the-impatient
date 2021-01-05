@@ -1,6 +1,6 @@
 # Scala for the Impatient  
 
-[book cover](https://horstmann.com/scala/images/cover2.jpg)
+![book cover](https://horstmann.com/scala/images/cover2.jpg)
 
 ### Here are my solutions for the exercises in book [Scala for the Impatient](https://horstmann.com/scala/)
 

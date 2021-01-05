@@ -1,6 +1,6 @@
-### [To the main page](/index.md)  
-
 # Chapter 1. The Basics  
+
+### [To the main page](/Scala-for-the-impatient)  
 
 _1. In the Scala REPL, type 3. followed by the Tab key. What methods can be applied?_
 ```
@@ -65,4 +65,4 @@ The differences between them and `substring` are:**
 - `substring` is less readable.  
 - `substring` doesn't allow one to treat a `String` as a sequential collection of chars.  
 
-### [To the main page](/index.md)  
+### [To the main page](/)  

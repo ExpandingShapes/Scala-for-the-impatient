@@ -12,10 +12,10 @@ def signum(x: Int): Int = x match {
 }
 ```    
 
-_2. What is the value of an empty block expression {}? What is its type?_  
+_2. What is the value of an empty block expression `{}`? What is its type?_  
 **The value is () and the return type is Unit.**
 
-_3. Come up with one situation where the assignment x = y = 1 is valid in Scala. (Hint: Pick a
+_3. Come up with one situation where the assignment `x = y = 1` is valid in Scala. (Hint: Pick a
 suitable type for x.)_  
 ```scala
 var y = 0
@@ -31,7 +31,7 @@ for (int i = 10; i >= 0; i--)
 for (i <- 10 to 0 by -1) yield println(i)
 ```  
 
-_5. Write a procedure countdown(n: Int) that prints the numbers from n to 0._  
+_5. Write a procedure `countdown(n: Int)` that prints the numbers from n to 0._  
 ```scala
 def countdown(n: Int): Seq[Unit] = {
   val step = if (n > 0) -1 else 1
@@ -45,12 +45,12 @@ example, the product of the characters in "Hello" is 9415087488L._
 (for (char <- string) yield char.toInt).product
 ```
 
-_7. Solve the preceding exercise without writing a loop. (Hint: Look at the StringOps Scaladoc.)_  
+_7. Solve the preceding exercise without writing a loop. (Hint: Look at the `StringOps` Scaladoc.)_  
 ```scala
 string.foldLeft(1L)((prod, char) => prod * char.toLong)
 ```
 
-_8. Write a function product(s : String) that computes the product, as described in the preceding
+_8. Write a function `product(s : String)` that computes the product, as described in the preceding
 exercises._  
 ```scala
 def product(string: String): Long =

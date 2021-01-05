@@ -1,3 +1,5 @@
+### [To the main page](/index.md)
+
 # Chapter 1. The Basics  
 
 _1. In the Scala REPL, type 3. followed by the Tab key. What methods can be applied?_

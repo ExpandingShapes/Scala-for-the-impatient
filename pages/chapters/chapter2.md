@@ -74,6 +74,8 @@ _10. Write a function that computes xn, where n is an integer. Use the following
 • xn = 1 / x–n if n is negative.  
 _Don’t use a return statement._  
 ```scala
+val isEven: Int => Boolean = _ % 2 == 0
+
 def exercise10(x: Int, n: Int): Double = n match {
     case n if isEven(n) && n > 0  =>
       exercise10(x, n / 2) * exercise10(x, n / 2)

@@ -57,8 +57,8 @@ _10. What do the `take`, `drop`, `takeRight`, and `dropRight` string functions d
 disadvantage do they have over using `substring`?_  
 **`drop`/`dropRight` return the string without its n first/last chars,  
 `take`/`takeRight` return the string's n first/last chars.  
-The differences between them and `substring` are:  
+The differences between them and `substring` are:**  
 - these `StringOps` operations use slice method which delegates to `String.substring`.  
 - `substring` can throw `IndexOutOfBoundsException`.  
 - `substring` is less readable.  
-- `substring` doesn't allow one to treat a `String` as a sequential collection of chars.**
+- `substring` doesn't allow one to treat a `String` as a sequential collection of chars.

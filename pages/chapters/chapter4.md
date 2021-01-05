@@ -107,7 +107,7 @@ java.vendor.url          | http://java.sun.com/
 path.separator           | :
 java.vm.name             | Java HotSpot(TM) Server VM
 ```
-You need to find the length of the longest key before you can print the table._
+_You need to find the length of the longest key before you can print the table._
 ```scala
 val KEY_VALUE_SEPARATOR = "    "
 val properties = java.lang.System.getProperties.asScala
@@ -135,6 +135,6 @@ def lteqgt(values: Array[Int], v: Int): (Int, Int, Int) = (
 
 _10. What happens when you zip together two strings, such as `"Hello".zip("World")`? Come up with a
 plausible use case._  
-**You get a sequence of tuples consisting of str1(0) -> str2(0), str1(1) -> str2(1), etc.  
+**You get a sequence of tuples consisting of `str1(0) -> str2(0)`, `str1(1) -> str2(1)`, etc.  
 `Vector((H,W), (e,o), (l,r), (l,l), (o,d))`  
-With .fold(), it is possible to check two strings for equality**
+With `fold`, it is possible to check two strings for equality**

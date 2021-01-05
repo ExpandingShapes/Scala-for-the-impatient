@@ -55,9 +55,10 @@ _9. How do you get the first character of a string in Scala? The last character?
 
 _10. What do the `take`, `drop`, `takeRight`, and `dropRight` string functions do? What advantage or
 disadvantage do they have over using `substring`?_  
-**`take`/`takeRight` return the string's n first/last chars.
-The differences between them and `substring` are:
-- these `StringOps` operations use slice method which delegates to `String.substring`.
-- `substring` can throw `IndexOutOfBoundsException`.
-- `substring` is less readable.
+**`drop`/`dropRight` return the string without its n first/last chars,  
+`take`/`takeRight` return the string's n first/last chars.  
+The differences between them and `substring` are:  
+- these `StringOps` operations use slice method which delegates to `String.substring`.  
+- `substring` can throw `IndexOutOfBoundsException`.  
+- `substring` is less readable.  
 - `substring` doesn't allow one to treat a `String` as a sequential collection of chars.**

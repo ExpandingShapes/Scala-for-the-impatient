@@ -7,12 +7,11 @@ object Chapter02 {
     * A signum function.
     * @return 1 if x is positive, -1 if x is negative, and 0 if x is 0.
     */
-  def exercise01(x: Int): Int =
-    x match {
-      case x if x > 0 => 1
-      case x if x < 0 => -1
-      case 0          => 0
-    }
+  def signum(x: Int): Int = x match {
+    case x if x > 0 => 1
+    case x if x < 0 => -1
+    case 0          => 0
+  }
 
   /**
     * Exercise 02:
@@ -86,12 +85,11 @@ object Chapter02 {
     * Function that computes x raised to the power of n.
     * @return x raised to the power of n.
     */
-  def exercise10(x: Int, n: Int): Double =
-    n match {
+  def exercise10(x: Int, n: Int): Double = n match {
       case n if isEven(n) && n > 0 =>
         exercise10(x, n / 2) * exercise10(x, n / 2)
       case n if !isEven(n) && n > 0 => x * exercise10(x, n - 1)
       case 0                        => 1
       case n if n < 0               => 1 / exercise10(x, -n)
-    }
+  }
 }
